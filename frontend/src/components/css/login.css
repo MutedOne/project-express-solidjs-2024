@@ -1,0 +1,27 @@
+.homepage {
+    background: url("/task-management.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .yawa{
+    background-color: red;
+  }
+
+  .forml{
+    width: calc(55%);
+  }
+  .imglogo{
+    width: calc(55%);
+  }
+  @media only screen and (max-width: 620px) {
+    .widescreen {
+     display: none;
+    }
+    .widescreennot {
+      display: block;
+     }
+    
+  }

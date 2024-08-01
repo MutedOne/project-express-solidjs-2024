@@ -1,0 +1,41 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"); */
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px!important;
+  --topNavbarHeight: 56px!important;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width)!important;
+}
+.sidebar-link {
+  display: flex!important;
+  align-items: center!important;
+}
+.sidebar-link .right-icon {
+  display: inline-flex!important;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg)!important;
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none !important;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none !important;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight)) !important;
+    top: var(--topNavbarHeight) !important;
+  }
+}

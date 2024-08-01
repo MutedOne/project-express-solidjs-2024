@@ -1,0 +1,14 @@
+.printme {
+	display: none;
+}
+.nodatalist {
+	pointer-events: none;
+  }
+@media print {
+	.no-printme  {
+		display: none;
+	}
+	.printme  {
+		display: block;
+	}
+}
